@@ -1,0 +1,51 @@
+
+/* ==========================================================================
+    ROOT
+   ========================================================================== */
+
+/* Define the root element styles. */
+html {
+    background: $root-background;
+    box-sizing: border-box;
+    color: $root-color;
+    overflow-y: scroll;
+
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*
+ * Border-box *all the things*, as suggested in:
+ * http:// paulirish.com/2012/box-sizing-border-box-ftw
+ */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Style the body element styles. */
+body {
+    background: $body-background;
+
+    font-family: $root-family;
+    font-size: $root-size;
+    font-weight: $root-weight;
+    line-height: $root-lineheight;
+
+    @include font-smoothing;
+}
+
+/* Colour selected text. */
+ ::-moz-selection {
+    background-color: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: $primary-color;
+    color: #fff;
+    text-shadow: none;
+}

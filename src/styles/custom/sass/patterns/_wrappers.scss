@@ -1,0 +1,13 @@
+
+/* ==========================================================================
+    CONTENT WRAPPER
+   ========================================================================== */
+
+.wrapper {
+    width: 100%;
+    max-width: $wrapper-width;
+	padding-left: $wrapper-padding;
+	padding-right: $wrapper-padding;
+    margin-left: auto;
+    margin-right: auto;
+}

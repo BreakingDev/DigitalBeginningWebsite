@@ -1,3 +1,4 @@
 craft/app
+craft/config/db.php
 craft/storage
 dist/
